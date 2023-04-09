@@ -1,5 +1,5 @@
 # mailstat.sh
-# monitor list of mail servers for up-time
+# monitor list of mail servers, report any down-time
 # keep up-time status on mail servers
 # John Masinter, 30-Jul-2009, John_Masinter@McAfee.com
 

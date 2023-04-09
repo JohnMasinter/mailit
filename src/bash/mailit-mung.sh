@@ -1,4 +1,5 @@
 #!/bin/bash
+# scan a mail message in a text file, and mung email address to protect from spam.
 
 if [ $# -lt 1 ] ; then
    printf "\nUsage: mailmung [file]\n\nConvert any email addresses in the file to the form \"name_at_domain_dot_com\" This is to protect from spam email harvester robots.\n\n"

@@ -4,15 +4,22 @@
 **License:** MIT
 
 **Description:**  
-mailit.py is a command line python utility to send mail messages or files to an smtp mail server via SMTP. It is a flexible, and you may easily modify or extend it. This is great for testing software that handles email, or for use by any admin scripts that want to send email notifications.
+mailit.py is a command line python utility to send mail messages or files to a MX'er server via SMTP. It is a flexible, and you may easily modify or extend it. This is great for testing software that handles email, or for use by any admin scripts that want to send email notifications.
 
-**Files:**  
+The mailt utility is contained in one .py file. The dirs will contain many source files numbered as mailit-01.py, mailit-02.py, ..., which repreent the evolution from the simplest smtp test to the full featured version. Python provides a nice smtp lib to make this easy. But this utility uses only sockets and implements its own SMTP. This is great for learning smtp, or modifing to test variations of smtp.
 
-- **mailit-11.py** - The highest numbered file is the latest version.
-- **mailit-mung.sh** - Given a filename, it will "mung" any regular emails addresses, `me@big.com`, into the robot safe form `me_at_big_dot_com`
-- **mailit-test.sh** - Examples of how to execute mailit to send email messages.
-- **mailit-uptime.sh** - blah
-- **mailit-volume.sh** - blah
+If you want to fetch the latest most functional version, then pick the highest numbered py file.
+
+**Directories:**  
+```
+src          - All source is under this dir
+   /python2  - python2 versions, mailit-01.py - mailit-11.py
+   /python3  - python3 versions, mailit-01.py - mailit-11.py
+   /bash     - bash scripts using mailit to demonstrate various uses
+      /mailit-test.sh    - simple example to send a string as a mail message
+      /mailit-uptime.sh  - monitor list of mail servers, report any down-time
+      /mailit-volume.sh  - mung email address in a text file to protect from spam
+```
 
 **Past:**  
 These are incremental versions starting from the very first tiny test program. These are included as they maybe helpful for a learning activity.

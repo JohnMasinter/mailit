@@ -5,7 +5,7 @@
 
 # echo commands to terminal to show how it is being called
 set -x
-# this alias should go in your .bashrc to make it easy to call
+# recommend putting an alias in your .bashrc
 alias mailit="$HOME/bin/mailit-11.py"
 # replace this with one or more of your valid email addresses
 T="per1@big.com,per2@big.com,per3@big.com"

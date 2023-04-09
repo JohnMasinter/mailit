@@ -1,0 +1,17 @@
+How to find an SMTP server (MX'er) to test against.
+
+# find it
+$ dig -t MX gmail.com
+alt3.gmail-smtp-in.l.google.com. 60 IN  A       142.250.112.26
+
+# test it
+$ telnet 142.250.112.26 25
+
+# example next reference to smtp svrp
+# centurylink defines smtp port: 587
+$ dig -t MX smtp.centurylink.net
+smtp.centurylink.net.   151     IN      CNAME   mail.centurylink.net.
+mail.centurylink.net.   89      IN      CNAME   lumen.pangia.biz.
+$ dig -t A lumen.pangia.biz
+lumen.pangia.biz.       50      IN      A       209.67.129.100
+
